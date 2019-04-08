@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activities.PumpingScheduleActivity">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+    >
+
+
+
+        <ImageView
+                android:id="@+id/logo"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/logoimage"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"/>
+
+        <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arabicnormal"
+                android:paddingTop="10dp"
+                android:text="جدول توزيع المياه"
+                android:textColor="#275B57"
+                android:textSize="22dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_below="@+id/logo"
+
+        />
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/lstSchedule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:divider="@android:color/darker_gray"
+                android:scrollbars="vertical"
+                android:layout_below="@+id/text"
+                android:layout_marginTop="10dp"
+        ></android.support.v7.widget.RecyclerView>
+
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

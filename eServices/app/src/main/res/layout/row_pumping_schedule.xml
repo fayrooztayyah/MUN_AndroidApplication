@@ -1,0 +1,187 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="4dp">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="right"
+    android:padding="4dp">
+
+        <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:id="@+id/l1"
+                android:layout_marginEnd="2dp"
+                android:orientation="horizontal"
+                android:layout_alignParentEnd="true"
+                android:layout_toStartOf="@+id/item_info">
+
+            <TextView
+                    android:id="@+id/tvRegionName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="اسكان روجيب+ المنطقة الصناعية "
+                    android:textColor="@android:color/black"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginStart="2dp"
+                    android:fontFamily="@font/arbicblack"
+                    android:lines="1"
+                    android:textSize="18dp"/>
+
+            <TextView
+                    android:id="@+id/PlaceTag"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="المنطقة: "
+                    android:textAppearance="?android:attr/textAppearanceButton"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="@font/arabicthin"
+                    android:textSize="18dp"
+                    android:layout_marginEnd="2dp"
+                    android:lines="1"
+
+            />
+
+            <ImageView
+
+                    android:id="@+id/item_info"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/rectangle"
+                    android:layout_marginEnd="1dp"
+                    android:layout_gravity="center"/>
+
+        </LinearLayout>
+        <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp"/>
+
+        <LinearLayout
+
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/l2"
+
+                android:layout_marginEnd="10dp"
+        >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/rectangle"
+
+                    android:layout_marginEnd="5dp"
+                    android:id="@+id/statusImage"
+            />
+
+            <TextView
+                    android:id="@+id/tvPubmping_Status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="جاري الضخ "
+                    android:textSize="18dp"
+                    android:fontFamily="@font/arbicblack"
+                    android:textColor="@android:color/black"
+            />
+
+            <TextView
+                    android:id="@+id/statusTag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="الحالة: "
+                    android:textSize="18dp"
+                    android:fontFamily="@font/arabicthin"
+                    android:textAppearance="?android:attr/textAppearanceButton"
+                    android:textColor="@android:color/black"
+
+
+            />
+
+
+        </LinearLayout>
+        <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp"/>
+        <LinearLayout
+
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginEnd="10dp"
+        >
+
+            <TextView
+                    android:id="@+id/tvPubmping_Date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11/11/2019"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="@font/arbicblack"
+
+
+                    android:textSize="18dp"/>
+
+            <TextView
+                    android:id="@+id/dateTag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="تاريخ التشغيل: "
+                    android:fontFamily="@font/arabicthin"
+                    android:textAppearance="?android:attr/textAppearanceButton"
+                    android:textColor="@android:color/black"
+
+                    android:textSize="18dp"/>
+
+
+        </LinearLayout>
+        <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp"/>
+        <LinearLayout
+
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginEnd="10dp"
+        >
+
+            <TextView
+                    android:id="@+id/tvPubmping_EndDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11/11/2019"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="@font/arbicblack"
+
+
+                    android:textSize="18dp"/>
+
+            <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="تاريخ التشغيل: "
+                    android:fontFamily="@font/arabicthin"
+                    android:textAppearance="?android:attr/textAppearanceButton"
+                    android:textColor="@android:color/black"
+
+                    android:textSize="18dp"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

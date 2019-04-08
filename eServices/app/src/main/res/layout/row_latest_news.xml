@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical"
+                android:background="@android:color/white"
+                android:padding="2dp"
+>
+
+    <ImageView
+            android:id="@+id/imgNewsImage"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+
+            android:layout_alignParentRight="true"
+
+            android:scaleType="fitXY"
+            android:src="@drawable/news" />
+
+    <TextView
+
+            android:id="@+id/tvNewsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/imgNewsImage"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="125dp"
+            android:layout_marginStart="1dp"
+            android:fontFamily="@font/arabicnormal"
+            android:gravity="right"
+            android:text="بلدسة نابلس والغرفة التجارية كيانا موحدا للنهوض بواقع المدينة"
+            android:textColor="@android:color/black"
+
+            android:textSize="18dp" />
+
+
+    <TextView
+
+            android:id="@+id/tvNewsDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:fontFamily="@font/arbicblack"
+            android:text="11/11/2019"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="5dp"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="16dp" />
+
+    <!--<Space-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="15dp" -->
+    <!---->
+    <!--/>-->
+</RelativeLayout>

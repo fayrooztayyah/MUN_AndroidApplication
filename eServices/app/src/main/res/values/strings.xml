@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">eServices</string>
+    <string name="action_settings">Settings</string>
+    <string name="LoginWelcomeText">مرحبا بكم في بوابة الخدمات الالكترونية.</string>
+    <string name="Slogant">نعمل معا وسويا لتحسين جودة الخدمات وتسهيل التواصل.</string>
+    <string name="HasAccount">لديك حساب مسبق</string>
+    <string name="NewUser">مستخدم جديد</string>
+    <string name="WithoutLogin">متابعة بدون تسجيل دخول</string>
+
+    <string name="underlined_text">
+        <u>التفاصيل</u>
+    </string>
+</resources>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activities.AddComplaintActivity">
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+        >
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="تقديم شكوى"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/arabicnormal"
+                    android:textColor="#01453A"
+                    android:textSize="24dp"
+
+
+            />
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="119dp"
+                    android:layout_gravity="right"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/border_edittext"
+                    android:fontFamily="@font/arabicnormal"
+                    android:hint="تفاصيل الشكوى"
+            />
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="8dp"
+
+
+                    android:orientation="horizontal"
+            >
+
+                <EditText
+                        android:layout_width="match_parent"
+                        android:layout_marginStart="2dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="right"
+                        android:layout_marginEnd="1dp"
+                        android:background="@drawable/border_edittext"
+                        android:fontFamily="@font/arabicnormal"
+                        android:hint="موقعك" />
+
+                <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/location" />
+
+
+            </LinearLayout>
+
+            <EditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/border_edittext"
+                    android:fontFamily="@font/arabicnormal"
+                    android:hint="عنوانك" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/arabicnormal"
+                    android:text="اضف صور"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="3"
+                    android:orientation="horizontal"
+
+            >
+
+                <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/addimage"
+                        android:scaleType="fitXY"/>
+                <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/addimage"
+                        android:scaleType="fitXY"/>
+                <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/addimage"
+                        android:scaleType="fitXY"/>
+            </LinearLayout>
+
+            <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/arbicblack"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:textColor="@android:color/white"
+                    android:background="#01453A"
+                    android:text="ارسال الشكوى"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

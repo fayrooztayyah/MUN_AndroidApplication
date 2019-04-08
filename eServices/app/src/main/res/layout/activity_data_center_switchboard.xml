@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activities.DataCenterSwitchboardActivity">
+
+    <LinearLayout
+            android:layout_marginTop="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+    >
+
+        <Button
+                android:id="@+id/btnAboutUS"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@drawable/cornerbutton"
+                android:text="عن البلدية"
+                android:textSize="22dp"
+                android:fontFamily="@font/arbicblack"
+                android:textColor="@android:color/white"
+
+        />
+        <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+        <Button
+                android:id="@+id/informationBtn"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@drawable/cornerbutton"
+                android:text="تعليمات"
+                android:textSize="22dp"
+                android:fontFamily="@font/arbicblack"
+                android:textColor="@android:color/white"
+        />
+        <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+        <Button
+                android:id="@+id/InstructionBtn"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@drawable/cornerbutton"
+                android:text="تعميمات"
+                android:textSize="22dp"
+                android:fontFamily="@font/arbicblack"
+                android:textColor="@android:color/white"
+        />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
