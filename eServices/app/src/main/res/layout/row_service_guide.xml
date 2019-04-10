@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="wrap_content"
+                                             android:padding="5dp">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            tools:ignore="MissingConstraints"
+    >
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="vertical">
+
+            <LinearLayout
+
+                    android:id="@+id/l1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal"
+
+            >
+
+                <TextView
+                        android:id="@+id/tvService_Number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginEnd="2dp"
+                        android:fontFamily="@font/arbicblack"
+                        android:lines="1"
+                        android:text="٩٨٩"
+                        android:textColor="@android:color/black"
+                        android:textSize="18dp" />
+
+                <Space
+                        android:layout_width="2dp"
+                        android:layout_height="wrap_content" />
+
+                <TextView
+                        android:id="@+id/serviceNumTag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/arabicthin"
+                        android:lines="1"
+                        android:paddingRight="5dp"
+                        android:text="رمز نوع الخدمة: "
+                        android:textAppearance="?android:attr/textAppearanceButton"
+                        android:textColor="@android:color/black"
+                        android:textSize="18dp"
+
+                />
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                              android:id="@+id/statusImage"
+                                                              android:layout_width="12dp"
+                                                              android:layout_height="12dp"
+                                                              android:layout_gravity="center"
+                                                              android:layout_marginRight="5dp"
+                                                              android:src="@drawable/rectangle" />
+            </LinearLayout>
+
+            <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+            <LinearLayout
+
+
+                    android:id="@+id/l2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:paddingRight="15dp">
+
+
+                <TextView
+                        android:id="@+id/tvService_Department"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/arbicblack"
+                        android:text="الادارة العامة"
+                        android:textColor="@android:color/black"
+                        android:textSize="18dp"
+
+                />
+
+                <Space
+                        android:layout_width="2dp"
+                        android:layout_height="wrap_content" />
+
+                <TextView
+                        android:id="@+id/departmentTag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/arabicthin"
+                        android:paddingRight="5dp"
+                        android:text="القسم: "
+                        android:textAppearance="?android:attr/textAppearanceButton"
+                        android:textColor="@android:color/black"
+                        android:textSize="18dp"
+
+
+                />
+
+
+            </LinearLayout>
+
+            <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+            <LinearLayout
+
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:paddingRight="15dp"
+                    android:weightSum="2">
+
+                <TextView
+                        android:id="@+id/tvService_Type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/arbicblack"
+                        android:text="طلب اخر لقسم الادارة"
+                        android:textColor="@android:color/black"
+                        android:textSize="18dp" />
+
+                <Space
+                        android:layout_width="2dp"
+                        android:layout_height="wrap_content" />
+
+                <TextView
+                        android:id="@+id/serviceTypeTag"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/arabicthin"
+                        android:text="نوع الخدمة: "
+                        android:textAppearance="?android:attr/textAppearanceButton"
+                        android:textColor="@android:color/black"
+                        android:paddingRight="5dp"
+                        android:textSize="18dp" />
+
+
+            </LinearLayout>
+
+            <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+            <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="15dp"
+
+                    android:orientation="horizontal"
+
+            >
+
+                <TextView
+                        android:id="@+id/tvService_workTime"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginEnd="2dp"
+                        android:fontFamily="@font/arbicblack"
+                        android:lines="1"
+                        android:text="20-1يوم"
+                        android:textColor="@android:color/black"
+                        android:textSize="18dp" />
+
+                <Space
+                        android:layout_width="2dp"
+                        android:layout_height="wrap_content" />
+
+                <TextView
+                        android:id="@+id/workTimeTag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/arabicthin"
+                        android:lines="1"
+                        android:paddingRight="5dp"
+                        android:text="المدة المتوقعة للانجاز: "
+                        android:textAppearance="?android:attr/textAppearanceButton"
+                        android:textColor="@android:color/black"
+                        android:textSize="18dp"
+
+                />
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                              android:layout_width="15dp"
+                                                              android:layout_height="15dp"
+                                                              android:layout_gravity="center"
+
+                                                              android:src="@drawable/timericon"
+
+
+                />
+            </LinearLayout>
+
+            <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+            <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="left"
+
+            >
+
+                <TextView
+                        android:id="@+id/btnService_Details"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:fontFamily="@font/arbicblack"
+                        android:lines="1"
+                        android:text="@string/underlined_text"
+                        android:textColor="@android:color/black"
+                        android:textSize="18dp" />
+
+                <Space
+                        android:layout_width="2dp"
+                        android:layout_height="wrap_content" />
+
+                />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

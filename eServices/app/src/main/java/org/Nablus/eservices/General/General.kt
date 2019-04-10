@@ -7,8 +7,6 @@ import android.os.Parcelable
 import android.util.Log
 import android.view.View
 import android.widget.Toast
-import com.android.volley.Request
-import com.android.volley.Response
 import com.android.volley.toolbox.JsonArrayRequest
 import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.Volley
@@ -16,6 +14,10 @@ import org.Nablus.eservices.Models.Criteria_Model
 import org.json.JSONArray
 import org.json.JSONObject
 import java.lang.reflect.Method
+import android.support.design.widget.Snackbar
+import android.R.attr.password
+import com.android.volley.*
+
 
 var SPLASH_TIME_OUT: Long = 4000
 val DATABASENAME = "ComplaintDB"
@@ -32,38 +34,88 @@ public interface VolleyCallback {
 class General {
 
 
-    public fun getAPIResult_JSONArray(context: Context, URL: String, method: Int, callback: VolleyCallback): String {
+    public fun getAPIResult_JSONArray(context: Context, URL: String, method: Int, callback: VolleyCallback, parm: JSONObject): String {
         //val URL = "http://data.daral-aalam.ps/API/SrearchBook"
         //val criteria = "كنز"
         //val criteria_Model: Criteria_Model = Criteria_Model(Field_Name = "Book_Title", Field_Value = criteria)
         val requestQueue = Volley.newRequestQueue(context)
         //var jsonObject: JSONObject = JSONObject()
-        var jsonObject: JSONArray = JSONArray()
+       var jsonObject: JSONArray = JSONArray()
         //jsonObject.put("Field_Name", "Book_Title")
         //jsonObject.put("Field_Value", criteria)
         var result: String = ""
-        //        var objectRequest = JsonObjectRequest(
-        var objectRequest = JsonArrayRequest(
-            //Request.Method.POST,
-            method,
-            URL,
-            jsonObject,
-            Response.Listener {
 
-                callback.onSuccessResponse(it.toString())
-            },
-            Response.ErrorListener {
-                Toast.makeText(context, it.toString(), Toast.LENGTH_LONG).show()
-                Log.d("Error", it.toString())
-            })
-        val comparable = try {
-            requestQueue.add(objectRequest)
-        } catch (ex: Exception) {
-            Toast.makeText(context, ex.message.toString(), Toast.LENGTH_LONG).show()
-            Log.d("Error", ex.message.toString())
-        }
-        return result// objectRequest.toString()
+
+
+
+         if (method == Request.Method.POST){
+             var objectRequest = JsonObjectRequest(
+
+                 method,
+                 URL,
+                 parm,
+
+
+                 Response.Listener {
+
+                     callback.onSuccessResponse(it.toString())
+                 },
+
+
+                 Response.ErrorListener {
+                     Toast.makeText(context, it.networkResponse.statusCode.toString(), Toast.LENGTH_LONG).show()
+                     Log.d("Error", it.toString())
+                 })
+
+
+
+
+
+
+             val comparable = try {
+                 requestQueue.add(objectRequest)
+             } catch (ex: Exception) {
+                 Toast.makeText(context, ex.message.toString(), Toast.LENGTH_LONG).show()
+                 Log.d("Error", ex.message.toString())
+             }
+             return result// objectRequest.toString()
+         }
+
+        else{
+
+             var objectRequest = JsonArrayRequest(
+
+                 method,
+                 URL,
+                 jsonObject,
+
+                 Response.Listener {
+
+                     callback.onSuccessResponse(it.toString())
+                 },
+                 Response.ErrorListener {
+                     Toast.makeText(context, it.toString(), Toast.LENGTH_LONG).show()
+                     Log.d("Error", it.toString())
+                 })
+             val comparable = try {
+                 requestQueue.add(objectRequest)
+             } catch (ex: Exception) {
+                 Toast.makeText(context, ex.message.toString(), Toast.LENGTH_LONG).show()
+                 Log.d("Error", ex.message.toString())
+             }
+             return result// objectRequest.toString()
+         }
+
     }
+
+
+
+
+
+
+
+
+
 
     public fun getAPIResult_JSONObject(context: Context, URL: String, method: Int, callback: VolleyCallback): String {
         //val URL = "http://data.daral-aalam.ps/API/SrearchBook"

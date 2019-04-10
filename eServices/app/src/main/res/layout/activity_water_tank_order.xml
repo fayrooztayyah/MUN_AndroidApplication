@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activities.WaterTankOrderActivity">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="رقم الاشتراك"
+                    android:fontFamily="@font/arabicnormal"
+
+
+                    android:layout_marginRight="18dp"
+                    android:layout_marginLeft="15dp"
+
+                    android:layout_marginTop="5dp"
+                    android:textColor="@android:color/black"
+            />
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:id="@+id/ed_SubNumber"
+                    android:textColor="@android:color/black"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:inputType="number"
+
+            />
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="اسم المشترك"
+                    android:fontFamily="@font/arabicnormal"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginLeft="15dp"
+
+                    android:layout_marginTop="5dp"
+                    android:textColor="@android:color/black"
+            />
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:id="@+id/ed_SubName"
+                    android:textColor="@android:color/black"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_edittext"
+            />
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="الفئة"
+                    android:fontFamily="@font/arabicnormal"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginLeft="15dp"
+
+                    android:layout_marginTop="5dp"
+                    android:textColor="@android:color/black"
+
+            />
+            <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/spinner_border"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:entries="@array/subscriberType"
+                    android:id="@+id/sp_SubType"
+
+
+
+            ></Spinner>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="وصف المبنى"
+                    android:fontFamily="@font/arabicnormal"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginLeft="15dp"
+
+                    android:layout_marginTop="5dp"
+                    android:textColor="@android:color/black"
+
+            />
+            <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/spinner_border"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:entries="@array/buildingType"
+                    android:id="@+id/sp_BuildingType"
+
+            ></Spinner>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="right"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="يوجد مزود مياه"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="16dp"
+                        android:fontFamily="@font/arabicnormal"
+                        android:textColor="@android:color/black"
+
+                />
+                <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_gravity="right"
+                        android:textColor="#01453A"
+                        android:id="@+id/ch_HasWaterSupply"
+
+                />
+
+
+            </LinearLayout>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="كمية المياه المطلوبة"
+                    android:fontFamily="@font/arabicnormal"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginLeft="15dp"
+
+                    android:layout_marginTop="5dp"
+                    android:textColor="@android:color/black"
+            />
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:id="@+id/ed_WaterAmount"
+                    android:textColor="@android:color/black"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:layout_marginTop="10dp"
+                    android:inputType="number"
+            />
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="الحي"
+                    android:fontFamily="@font/arabicnormal"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginLeft="15dp"
+
+                    android:layout_marginTop="5dp"
+                    android:textColor="@android:color/black"
+            />
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:id="@+id/ed_SubArea"
+                    android:textColor="@android:color/black"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:layout_marginTop="10dp"
+            />
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="الشارع"
+                    android:fontFamily="@font/arabicnormal"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginLeft="15dp"
+
+                    android:layout_marginTop="5dp"
+                    android:textColor="@android:color/black"
+            />
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:id="@+id/ed_SubStreet"
+                    android:textColor="@android:color/black"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:layout_marginTop="10dp"
+            />
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="البناية"
+                    android:fontFamily="@font/arabicnormal"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginLeft="15dp"
+
+                    android:layout_marginTop="5dp"
+                    android:textColor="@android:color/black"
+            />
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:id="@+id/ed_SubBuilding"
+                    android:textColor="@android:color/black"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:layout_marginTop="10dp"
+            />
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="معلم واضح"
+                    android:fontFamily="@font/arabicnormal"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginLeft="15dp"
+
+                    android:layout_marginTop="5dp"
+                    android:textColor="@android:color/black"
+            />
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:id="@+id/ed_landMark"
+                    android:textColor="@android:color/black"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:layout_marginTop="10dp"
+            />
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="الهاتف الخلوي"
+                    android:fontFamily="@font/arabicnormal"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginLeft="15dp"
+
+                    android:layout_marginTop="5dp"
+                    android:textColor="@android:color/black"
+            />
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:id="@+id/ed_MobileNumber"
+                    android:textColor="@android:color/black"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:layout_marginTop="10dp"
+            />
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="ملاحظات"
+                    android:fontFamily="@font/arabicnormal"
+
+                    android:layout_marginRight="18dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="15dp" />
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:id="@+id/ed_SubNotes"
+                    android:textColor="@android:color/black"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:layout_marginTop="10dp"
+
+            />
+
+            <Button
+                    android:layout_width="140dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:backgroundTint="#01453A"
+                    android:fontFamily="@font/arbicblack"
+                    android:textColor="@android:color/white"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:text="طلب صهريج مياه"
+                    android:onClick="btnWaterTankOrder_Click"/>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

@@ -11,6 +11,16 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".Activities.ServiceGuideDetailsActivity">
+        </activity>
+        <activity android:name=".Activities.ServiceGuideActivity">
+        </activity>
+        <activity android:name=".Activities.SuggestionActivity">
+        </activity>
+        <activity android:name=".Activities.NotificationActivity">
+        </activity>
+        <activity android:name=".Activities.WaterTankOrderActivity">
+        </activity>
         <activity android:name=".Activities.ServicePumpingScheduleActivity">
         </activity>
         <activity android:name=".Activities.PumpingScheduleActivity">

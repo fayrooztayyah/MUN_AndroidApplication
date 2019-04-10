@@ -18,6 +18,10 @@ import org.Nablus.eservices.General.VolleyCallback
 import org.Nablus.eservices.Models.ServicePumpingScheduleModel
 import org.Nablus.eservices.R
 import org.json.JSONArray
+import org.json.JSONObject
+
+
+
 
 class ServicePumpingScheduleActivity : AppCompatActivity() {
 
@@ -29,7 +33,7 @@ class ServicePumpingScheduleActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_service_pumping_schedule)
+        setContentView(org.Nablus.eservices.R.layout.activity_service_pumping_schedule)
         oList = java.util.ArrayList<ServicePumpingScheduleModel>()
         pdia =  ProgressDialog(this)
 
@@ -109,11 +113,11 @@ class ServicePumpingScheduleActivity : AppCompatActivity() {
                 }
 
             }
-
+            val postparams = JSONObject()
 
             General().getAPIResult_JSONArray(
                 this, "http://192.168.0.169:5135/api/Water/PumpingSchedule/Agreement_No?Agreement_No=" + initSumNumber,
-                Request.Method.GET, obj
+                Request.Method.GET, obj,postparams
             )
 
         }

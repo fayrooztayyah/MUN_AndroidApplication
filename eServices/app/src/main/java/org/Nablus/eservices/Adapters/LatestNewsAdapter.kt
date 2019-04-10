@@ -7,16 +7,25 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.row_latest_news.view.*
 import org.Nablus.eservices.Activities.NewsDetailsActivity
 import org.Nablus.eservices.Models.LatestNewsModel
-import org.Nablus.eservices.R
+
+
+
+
+
+
+
 
 
 class LatestNewsListAdapter(val context: Context, var oList: List<LatestNewsModel>) :
     RecyclerView.Adapter<LatestNewsListAdapter.TestListViewHolder>() {
+
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TestListViewHolder {
-        val view = LayoutInflater.from(context).inflate(R.layout.row_latest_news, parent, false)
+        val view = LayoutInflater.from(context).inflate(org.Nablus.eservices.R.layout.row_latest_news, parent, false)
         return TestListViewHolder(view)
     }
 
@@ -35,9 +44,23 @@ class LatestNewsListAdapter(val context: Context, var oList: List<LatestNewsMode
         init {
             itemView.setOnClickListener {
                 ////////////////Open Detail Intent///////////////////
+                //val itemPosition
+              //  val item = oList.get(itemPosition)
+                var intent = Intent(context, NewsDetailsActivity::class.java).also {
 
-            var intent = Intent(context, NewsDetailsActivity::class.java)
-            startActivity(context, intent, null)
+                    it.putExtra("News_title", Current_LatestNews?.NewsTitel)
+                    it.putExtra("News_text", Current_LatestNews?.NewsDetails)
+                    it.putExtra("News_image", Current_LatestNews?.NewsImage)
+                    it.putExtra("News_date", Current_LatestNews?.NewsDate)
+                }
+
+                startActivity(context, intent, null)
+
+
+
+
+
+
 
             }
 // itemView.imgFlag.setOnClickListener {
@@ -62,7 +85,10 @@ class LatestNewsListAdapter(val context: Context, var oList: List<LatestNewsMode
             Current_Position = pos
             itemView.tvNewsDate.text = Current_LatestNews!!.NewsDate
             itemView.tvNewsTitle.text=Current_LatestNews!!.NewsTitel
-
+            Picasso.get().load(Current_LatestNews!!.NewsImage).resize(120  ,120).into(itemView.imgNewsImage)
+            //Picasso.with(context).load(Current_LatestNews!!.NewsImage).into(itemView.imgNewsImage)
+            
+//imgNewsImage
 
         }
     }

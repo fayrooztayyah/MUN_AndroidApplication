@@ -8,7 +8,7 @@
     <android.support.v7.widget.CardView
             android:id="@+id/cardView"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="180dp"
             card_view:cardCornerRadius="0dp"
             card_view:cardElevation="@dimen/margin10"
             card_view:cardMaxElevation="@dimen/margin10"
@@ -30,17 +30,16 @@
                     android:textColor="@android:color/white"
                     android:textSize="18dp"
                     android:fontFamily="@font/bein_arabic_black_webfont"
-                    android:layout_below="@+id/imageView" />
+                    android:layout_below="@+id/imageView"/>
             <ImageView
                     android:id="@+id/imageView"
                     android:layout_width="wrap_content"
                     android:layout_height="70dp"
-                    android:layout_centerInParent="true"
+                    android:layout_marginTop="20dp"
+                   android:layout_centerHorizontal="true"
                     android:tint="@android:color/white"
-                    android:padding="5dp" />
 
-
-
+                    android:padding="3dp"/>
 
 
         </RelativeLayout>

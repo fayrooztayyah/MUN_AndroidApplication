@@ -2,6 +2,7 @@ package org.Nablus.eservices.Activities
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.widget.DividerItemDecoration
 import android.support.v7.widget.GridLayoutManager
 import android.support.v7.widget.LinearLayoutManager
 import android.view.Menu
@@ -65,6 +66,7 @@ newList.add(CountryModel(CountryID,CountryName,Country_Flag,Flag_Usage_Year,Capi
         recyclerView.adapter = adapter
 
         val manager = GridLayoutManager(this, 2, GridLayoutManager.VERTICAL, false)
+       // recyclerView.addItemDecoration(DividerItemDecoration(this, DividerItemDecoration.VERTICAL))
         recyclerView.layoutManager = manager
     }
 

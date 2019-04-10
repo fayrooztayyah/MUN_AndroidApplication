@@ -5,6 +5,11 @@ import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_news_details.*
 
 import org.Nablus.eservices.R
+import android.R.attr.data
+import android.content.Intent
+import com.squareup.picasso.Picasso
+import kotlinx.android.synthetic.main.row_latest_news.view.*
+
 
 class NewsDetailsActivity : AppCompatActivity() {
 
@@ -12,13 +17,18 @@ class NewsDetailsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_news_details)
 
+        val News_title = getIntent().getStringExtra("News_title");
+        val News_text = getIntent().getStringExtra("News_text");
+        val News_image = getIntent().getStringExtra("News_image");
+        val News_date = getIntent().getStringExtra("News_date");
 
-        tvNewsTitle.text = " مشاركة بلدية نابلس في ورشة عمل المدن المنيعة"
-        tvNewsText.text =
-            "شاركت بلدية نابلس ممثلة بمديرة وحدة التخطيط الاستراتيجي والتنمية الاقتصادية د.آمال هدهد في ورشة عمل المدن المنيعة تحت عنوان \" تبادل الخبرات \" والتي عقدت في مدينة انشون في دولة كوريا الجنوبية في الفترة ما بين 4-8/3/2019 والتي نظمها مكتب الامم المتحدة للحد من مخاطر الكوارث ، حيث ان مدينة نابلس متمثلة ببلديتها ضمن عشرين مدينة حول العالم تم اختيارها لتحضير خطة تنفيذية للحد من مخاطر الكوارث .\n" +
-    "\n" +
-    "هدفت الورشة الى تبادل الخبرات بين المدن ومناقشة الدروس والعبر التي خرجت بها خطط الحد من الكوارث ، حيث قامت د.هدهد بتقديم عرض عن خطة التنفيذ التي تم اعدادها للحد من الكوارث في مدينة نابلس والتي تم اعدادها بالطريقة التشاركية مع كافة الاطراف ذات العلاقة في المدينة وباشراف جامعة النجاح الوطنية ( مركزالتخطيط الحضري والحد من الكوارث ) برئاسة د.جلال الدبيك ، ووضحت المراحل التي مرت بها اعداد الخطة والتي بدأت بشهر تموز 2018 ، والتي تضمنت ورش عمل متخصصة ، كما تم خلال الورشة تعبئة بطاقة قياس المناعة للمدينة والقدرة على الصمود وتحديد الفجوات والخروج بمشاريع وانشطة تمثلت بالعمل على القوانين والتشريعات وبناء قاعدة بيانات خاصة بالكوارث واعداد خرائط المخاطر وتطوير البنية التحتية وانظمة الانذار المبكر لمواجهة الكوارث وتمكين المدينة على الصمود ."
-
+        tvNewsTitle.text = News_title
+        tvNewsText.text = News_text
+        Picasso.get().load(News_image).resize(120  ,120).into(imNews_image)
+        tvNewsDate.text = News_date
 
     }
+
+
+
 }

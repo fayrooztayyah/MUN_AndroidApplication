@@ -46,6 +46,14 @@ class PublicServicesSwitchBoardListAdapter(val context: Context, var oList: List
                         var intent = Intent(context, ServicePumpingScheduleActivity::class.java)
                         ContextCompat.startActivity(context, intent, null)
                     }
+                   2->{
+                        var intent = Intent(context, ServiceGuideActivity::class.java)
+                        ContextCompat.startActivity(context, intent, null)
+                    }
+                    3->{
+                        var intent = Intent(context, WaterTankOrderActivity::class.java)
+                        ContextCompat.startActivity(context, intent, null)
+                    }
                     7->{
                         var intent = Intent(context, ComplaintSwitchboardActivity::class.java)
                         ContextCompat.startActivity(context, intent, null)
@@ -58,6 +66,15 @@ class PublicServicesSwitchBoardListAdapter(val context: Context, var oList: List
                         var intent = Intent(context, LatestNewsActivity::class.java)
                         ContextCompat.startActivity(context, intent, null)
                     }
+                    5->{
+                        var intent = Intent(context, NotificationActivity::class.java)
+                        ContextCompat.startActivity(context, intent, null)
+                    }
+
+                    6->{
+                    var intent = Intent(context, SuggestionActivity::class.java)
+                    ContextCompat.startActivity(context, intent, null)
+                }
 
                 }
 

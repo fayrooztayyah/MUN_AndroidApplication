@@ -15,6 +15,7 @@ import org.Nablus.eservices.General.VolleyCallback
 import org.Nablus.eservices.Models.PumbingModel
 import org.Nablus.eservices.R
 import org.json.JSONArray
+import org.json.JSONObject
 
 class PumpingScheduleActivity : AppCompatActivity() {
 
@@ -59,10 +60,11 @@ class PumpingScheduleActivity : AppCompatActivity() {
 
         }
 
+        val jsonObject = JSONObject();
 
         General().getAPIResult_JSONArray(
             this, "http://192.168.0.169:5135/api/Water/ParentRegionPumpingSchedule",
-            Request.Method.GET, obj
+            Request.Method.GET, obj,jsonObject
         )
 
     }

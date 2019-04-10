@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activities.SuggestionActivity">
+
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+
+            <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/logoimage"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+            />
+
+            <TextView
+                    android:id="@+id/infotext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:fontFamily="@font/arabicnormal"
+                    android:text="مرحبا بكم في بلديتنا يسعدنا ان نستقبل ارائكم واقتراحاتكم .
+شارك معنا وكن عنصر فاعلا لذلك لا تتردد اذا كان لديكم اي اقتراح او استفسار"
+
+                    android:textColor="@android:color/black"
+                    android:layout_alignTop="@+id/logo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:textSize="19dp"
+
+            />
+            <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:hint="الموضوع"
+                    android:fontFamily="@font/arabicnormal"
+                    android:id="@+id/edSuggestion_title"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#01453A"
+                    android:layout_gravity="right"
+            />
+            <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+            <EditText
+                    android:id="@+id/edSuggestion_Details"
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:hint="نص الاقتراح"
+                    android:layout_height="120dp"
+                    android:backgroundTint="#01453A"
+                    android:fontFamily="@font/arabicnormal"
+                    android:layout_gravity="right"
+            />
+            <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+            <Button
+                    android:fontFamily="@font/arbicblack"
+                    android:id="@+id/sendBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="ارسال"
+                    android:background="#01453A"
+                    android:onClick="btnSendSuggestion_Click"
+                    android:textColor="#fff"
+                    android:textSize="16dp"
+            />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

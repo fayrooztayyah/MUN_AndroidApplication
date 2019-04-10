@@ -10,4 +10,39 @@
     <string name="underlined_text">
         <u>التفاصيل</u>
     </string>
+
+
+    <string-array name="subscriberType">
+        <item>فرد</item>
+        <item>مؤسسة خاصة</item>
+        <item>وزارة</item>
+        <item>مدرسة</item>
+        <item>دائرة حكومية</item>
+        <item>محل تجاري</item>
+
+
+    </string-array>
+
+    <string-array name="buildingType">
+        <item>مستقل</item>
+        <item>شقة في عمارة</item>
+    </string-array>
+
+
+    <string-array name="documentType">
+        <item>هوية</item>
+        <item>مشغل مرخص</item>
+        <item>اذن الاقتصاد الوطني</item>
+        <item>جواز سفر</item>
+        <item>غير ذالك</item>
+
+    </string-array>
+
+
+    <string name="forgetPassword_text">
+        <u>نسيت كلمة المرور</u>
+    </string>
+    <string name="documentslist_text">
+        <u>الاوراق والوثائق المطلوبة</u>
+    </string>
 </resources>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activities.ServiceGuideDetailsActivity">
+
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="MissingConstraints"
+            android:fillViewport="true">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="2dp"
+                android:orientation="vertical"
+                android:id="@+id/topLiner">
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="2dp"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:fontFamily="@font/arabicnormal"
+                        android:text="1237"
+                        android:id="@+id/tvService_Number"
+                        android:textColor="@android:color/background_dark" />
+
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:backgroundTint="#01453A"
+                        android:fontFamily="@font/arabicnormal"
+                        android:text="رقم نوع الطلب"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/rounded_edittext"/>
+
+
+            </LinearLayout>
+
+            <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp" />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="right"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+
+                        android:fontFamily="@font/arabicnormal"
+                        android:layout_marginTop="1dp"
+                        android:layout_gravity="center|bottom"
+                        android:layout_marginLeft="1dp"
+                         android:id="@+id/tvService_Type"
+                        android:text="ذى (ضرر)ناتج عن تسرب او دخول مياه خاصه-مياه او نزاز صرف صحي من بيت اومحل للغير على بيت او محل مجاور"
+                        android:textColor="@android:color/background_dark" />
+
+                <Button
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:background="@drawable/rounded_edittext"
+                        android:backgroundTint="#01453A"
+                        android:fontFamily="@font/arabicnormal"
+                        android:gravity="center"
+                        android:text=" نوع الطلب"
+                        android:textColor="@android:color/white" />
+
+
+            </LinearLayout>
+
+            <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp" />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="2dp"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:fontFamily="@font/arabicnormal"
+                        android:text="الادارة العامة"
+                        android:id="@+id/tvService_department"
+                        android:textColor="@android:color/background_dark" />
+
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:backgroundTint="#01453A"
+                        android:background="@drawable/rounded_edittext"
+                        android:fontFamily="@font/arabicnormal"
+                        android:text="القسم"
+                        android:textColor="@android:color/white" />
+
+
+            </LinearLayout>
+            <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp" />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="2dp"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:fontFamily="@font/arabicnormal"
+                        android:text="20-1 يوم"
+                        android:id="@+id/tvService_WorkingTime"
+                        android:textColor="@android:color/background_dark" />
+
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:backgroundTint="#01453A"
+                        android:fontFamily="@font/arabicnormal"
+                        android:text="مدة التنفيذ"
+                        android:background="@drawable/rounded_edittext"
+                        android:textColor="@android:color/white" />
+
+
+            </LinearLayout>
+            <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp" />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="2dp"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:fontFamily="@font/arabicnormal"
+                        android:text="-------"
+                        android:textColor="@android:color/background_dark" />
+
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:backgroundTint="#01453A"
+                        android:fontFamily="@font/arabicnormal"
+                        android:text="وصف الخدمة"
+                        android:background="@drawable/rounded_edittext"
+                        android:textColor="@android:color/white" />
+
+
+            </LinearLayout>
+            <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp" />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="2dp"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:fontFamily="@font/arabicnormal"
+                        android:text="----"
+                        android:textColor="@android:color/background_dark" />
+
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:backgroundTint="#01453A"
+                        android:fontFamily="@font/arabicnormal"
+                        android:text="مراحل العمل"
+                        android:background="@drawable/rounded_edittext"
+                        android:textColor="@android:color/white" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/arabicnormal"
+                    android:text="الاوراق والرسوم المطلوبة"
+                    android:layout_gravity="center"
+                    android:textColor="@android:color/background_dark" />
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#01453A"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+            />
+
+
+            <android.support.v7.widget.RecyclerView
+                    android:id="@+id/lstServiceGuide_Costs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:divider="@android:color/darker_gray"
+                    android:scrollbars="vertical"
+                    android:paddingTop="20dp"
+
+            ></android.support.v7.widget.RecyclerView>
+
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/documentslist_text"
+                    android:fontFamily="@font/arabicnormal"
+                    android:layout_gravity="left"
+                    android:gravity="left"
+                    android:layout_marginBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:layout_marginTop="10dp"
+
+                    android:textColor="@android:color/black"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

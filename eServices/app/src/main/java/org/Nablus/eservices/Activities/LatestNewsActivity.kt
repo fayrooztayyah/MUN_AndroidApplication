@@ -89,7 +89,7 @@ class LatestNewsActivity : AppCompatActivity() {
         }
 
 
-        General().getAPIResult_JSONArray(
+        General().getAPIResult_JSONObject(
             this, "http://192.168.0.169:5135/api/Portal/getNewsList",
             Request.Method.GET, obj
         )

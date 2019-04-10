@@ -12,6 +12,7 @@ import org.Nablus.eservices.General.General
 import org.Nablus.eservices.General.VolleyCallback
 import org.Nablus.eservices.R
 import org.json.JSONArray
+import org.json.JSONObject
 
 class LoginActivity : AppCompatActivity() {
 
@@ -24,13 +25,14 @@ class LoginActivity : AppCompatActivity() {
         startActivity(intent)
     }
     fun btnHasAccount_Click(view:View){
-       var strResult:String=""
+        var strResult:String=""
         val obj = object : VolleyCallback {
             override fun onSuccessResponse(result: String) {
-              strResult= result
+                strResult= result
             }
         }
-      val strTest:String =  General().getAPIResult_JSONArray(this,"http://192.168.0.169:5135/api/Water/ParentRegionPumpingSchedule",Request.Method.GET,obj)
+        val postparams = JSONObject()
+        val strTest:String =  General().getAPIResult_JSONArray(this,"http://192.168.0.169:5135/api/Water/ParentRegionPumpingSchedule",Request.Method.GET,obj,postparams)
         Toast.makeText(this,strResult  + "dddddd" ,Toast.LENGTH_LONG).show()
     }
 

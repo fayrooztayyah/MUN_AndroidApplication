@@ -20,6 +20,7 @@
                     android:layout_height="270dp"
                     android:src="@drawable/news"
                     android:scaleType="fitXY"
+                    android:id="@+id/imNews_image"
             />
 
             <TextView
