@@ -265,7 +265,8 @@
                     android:layout_marginBottom="5dp"
                     android:paddingLeft="5dp"
                     android:layout_marginTop="10dp"
-
+                    android:id="@+id/tvService_Documents"
+                    android:visibility="invisible"
                     android:textColor="@android:color/black"/>
 
         </LinearLayout>

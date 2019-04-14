@@ -16,5 +16,11 @@ class DataCenterSwitchboardActivity : AppCompatActivity() {
             val intent=Intent(this,AboutUsActivity::class.java)
             startActivity(intent)
         }
+
+        BtnInformation.setOnClickListener(){
+            val intent=Intent(this,DC_InformatiomActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }

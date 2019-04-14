@@ -32,6 +32,7 @@
             />
 
             <EditText
+                    android:id="@+id/edComplaint_Details"
                     android:layout_width="match_parent"
                     android:layout_height="119dp"
                     android:layout_gravity="right"
@@ -56,6 +57,7 @@
             >
 
                 <EditText
+                        android:id="@+id/edUser_Address"
                         android:layout_width="match_parent"
                         android:layout_marginStart="2dp"
                         android:layout_height="45dp"
@@ -75,7 +77,7 @@
             </LinearLayout>
 
             <EditText
-
+                    android:id="@+id/edUser_Location"
                     android:layout_width="match_parent"
                     android:layout_height="45dp"
                     android:layout_gravity="right"
@@ -109,18 +111,22 @@
             >
 
                 <ImageView
+                        android:id="@+id/imComplaintImage1"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/addimage"
+                        android:scaleType="fitXY"
+                    android:onClick="imComplaintImage1_Click"/>
+                <ImageView
+                        android:id="@+id/imComplaintImage2"
                         android:layout_weight="1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/addimage"
                         android:scaleType="fitXY"/>
                 <ImageView
-                        android:layout_weight="1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/addimage"
-                        android:scaleType="fitXY"/>
-                <ImageView
+                        android:id="@+id/imComplaintImage3"
                         android:layout_weight="1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -129,6 +135,7 @@
             </LinearLayout>
 
             <Button
+                    android:id="@+id/btnSubmitComplaint"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -138,7 +145,10 @@
                     android:layout_marginEnd="20dp"
                     android:textColor="@android:color/white"
                     android:background="#01453A"
-                    android:text="ارسال الشكوى"/>
+                    android:text="ارسال الشكوى"
+                    android:onClick="btnSubmitComplaint_Click"
+
+            />
 
         </LinearLayout>
 

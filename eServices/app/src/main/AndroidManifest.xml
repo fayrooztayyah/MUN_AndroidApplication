@@ -3,6 +3,17 @@
           package="org.Nablus.eservices">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+            android:name="android.hardware.camera.autofocus"
+            android:required="false" />
+    <uses-feature
+            android:name="android.hardware.camera"
+            android:required="false" />
 
     <application
             android:allowBackup="true"
@@ -11,6 +22,19 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+
+
+
+        <meta-data
+                android:name="com.google.android.geo.API_KEY"
+                android:value="AIzaSyBpZ0eLiDEcnyre-lrDZLv9o8T79ssZm3c" />
+
+
+        <meta-data android:name="com.google.android.gms.version"
+                   android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".Activities.DC_InformatiomActivity">
+        </activity>
         <activity android:name=".Activities.ServiceGuideDetailsActivity">
         </activity>
         <activity android:name=".Activities.ServiceGuideActivity">
@@ -36,6 +60,7 @@
         <activity android:name=".Activities.ComplaintSwitchboardActivity">
         </activity>
         <activity android:name=".Activities.AddComplaintActivity">
+
         </activity>
         <activity android:name=".Activities.AboutUsActivity">
         </activity>
@@ -57,6 +82,8 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
+
     </application>
 
 </manifest>

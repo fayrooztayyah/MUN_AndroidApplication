@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.support.v7.widget.DividerItemDecoration
 import android.support.v7.widget.LinearLayoutManager
 import android.util.Log
+import android.view.View
 import com.android.volley.Request
 import kotlinx.android.synthetic.main.activity_service_guide.*
 import kotlinx.android.synthetic.main.activity_service_guide_details.*
@@ -69,6 +70,7 @@ class ServiceGuideDetailsActivity : AppCompatActivity() {
 
                     var reader: JSONObject = JSONObject(result)
 
+                    ////////////Order_Type_Fees///////////////
                     if (reader.getString("Order_Type_Fees") == "null") {
 
 
@@ -98,6 +100,20 @@ class ServiceGuideDetailsActivity : AppCompatActivity() {
                         }
                         callAdapter()
                     }
+
+                        ////////////Order_Type_Documents///////////////
+
+                    if (reader.getString("Order_Type_Documents") == "null"){
+
+                        tvService_Documents.setVisibility(View.INVISIBLE)
+                    }
+
+                    else{
+                        Log.d("Order_Type_Documents",reader.getString("Order_Type_Documents"))
+                        tvService_Documents.setVisibility(View.VISIBLE)
+
+                    }
+
                 }
             }
             }

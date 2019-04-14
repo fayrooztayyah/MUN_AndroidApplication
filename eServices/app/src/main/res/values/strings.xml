@@ -6,7 +6,7 @@
     <string name="HasAccount">لديك حساب مسبق</string>
     <string name="NewUser">مستخدم جديد</string>
     <string name="WithoutLogin">متابعة بدون تسجيل دخول</string>
-
+    <integer name="gms_version">@integer/google_play_services_version</integer>
     <string name="underlined_text">
         <u>التفاصيل</u>
     </string>
